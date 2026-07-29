@@ -32,7 +32,9 @@
 </head>
 <body>
 
-<div class="ss-base" style="background: var(--bg); min-height: 100vh; overflow-x: hidden; position: relative;">
+<!-- overflow-x uses `clip`, not `hidden`: `hidden` resolves overflow-y to `auto`,
+     which makes this a scroll container and stops the sticky nav from sticking. -->
+<div class="ss-base" style="background: var(--bg); min-height: 100vh; overflow-x: clip; position: relative;">
   <div class="grain"></div>
 
   <!-- ============ Nav ============ -->
@@ -86,35 +88,47 @@
       <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">The <span class="t-serif" style="font-size: 31px;">strengths</span> I lean on</h2>
       <div class="grid-3">
         <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--chartreuse); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
-          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i data-lucide="layers" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="layers" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+            </div>
+            <div style="min-width: 0;">
+              <div class="t-h3" style="font-size: 17px;">End-to-end ownership</div>
+            </div>
           </div>
-          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">01</div>
-          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">End-to-end ownership</div>
           <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">I take a feature from the interface through the API and data layer, then stay with it in production. Knowing both sides means fewer handoffs and decisions that hold up once real traffic hits.</div>
         </div>
         <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--tech); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
-          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--tech); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i data-lucide="git-branch" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--tech); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="git-branch" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+            </div>
+            <div style="min-width: 0;">
+              <div class="t-h3" style="font-size: 17px;">Architecture and platform work</div>
+            </div>
           </div>
-          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">02</div>
-          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Architecture and platform work</div>
           <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">Shared component libraries, micro-frontends, SSR foundations, and API contracts that several teams build on — the pieces that stop each squad from re-solving the same problem.</div>
         </div>
         <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--ink); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
-          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--ink); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i data-lucide="bug" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--ink); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="bug" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+            </div>
+            <div style="min-width: 0;">
+              <div class="t-h3" style="font-size: 17px;">Debugging and reliability</div>
+            </div>
           </div>
-          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">03</div>
-          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Debugging and reliability</div>
           <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">When something breaks, I work through logs and traces in Splunk, Datadog, and New Relic, reproduce the issue, and find the root cause rather than patching the symptom. Test coverage, monitoring, and on-call are part of the job.</div>
         </div>
         <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--chartreuse); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
-          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <i data-lucide="users" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="users" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+            </div>
+            <div style="min-width: 0;">
+              <div class="t-h3" style="font-size: 17px;">Working with the team</div>
+            </div>
           </div>
-          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">04</div>
-          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Working with the team</div>
           <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">Code review, design-system and standards decisions, mentoring newer engineers, and working directly with design and product so what ships is what was actually needed.</div>
         </div>
       </div>
