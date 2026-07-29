@@ -1,0 +1,253 @@
+/* =========================================================
+   SimpleSplits — Design Tokens
+   Editorial Scoreboard aesthetic
+   ========================================================= */
+
+:root {
+  /* -------- Color: Paper & Ink -------- */
+  --paper:        #F5F2EB;
+  --paper-dim:    #EFEBE0;
+  --ink:          #1A1A1A;
+  --ink-soft:     #2A2A2A;
+
+  /* -------- Stone neutrals (warm gray scale) -------- */
+  --stone-50:     #F2EEE3;
+  --stone-100:    #EBE7DB;
+  --stone-200:    #E3DFD4;   /* hairline borders */
+  --stone-300:    #C8C3B5;
+  --stone-400:    #A6A193;
+  --stone-500:    #807B6E;
+  --stone-600:    #5C5851;
+  --stone-700:    #3D3A35;
+  --stone-800:    #2A2823;
+
+  /* -------- Accents (used sparingly) -------- */
+  --chartreuse:        #DDFB5C;   /* brand pop / CTA fill */
+  --chartreuse-dim:    #C7E54A;   /* hover/press on filled CTA */
+  --chartreuse-ink:    #1A1A1A;   /* fg on chartreuse fills */
+
+  /* -------- Money semantics (green = in, red = out) -------- */
+  --credit:            #1B7F45;
+  --credit-bg:         #DFEEDC;
+  --debit:             #C13E29;
+  --debit-bg:          #F4D9CE;
+
+  /* legacy: keep terracotta + moss aliases for older preview cards */
+  --terracotta:        #C75D3F;
+  --terracotta-bg:     #F3DCD0;
+  --moss:              #3F6B4E;
+  --moss-bg:           #DDE7DC;
+
+  /* -------- Semantic Foreground / Background -------- */
+  --bg:           var(--paper);
+  --bg-elev:      #FFFFFF;        /* card */
+  --bg-sunk:      var(--paper-dim);
+  --fg:           var(--ink);
+  --fg-2:         var(--stone-700);   /* secondary text */
+  --fg-3:         var(--stone-500);   /* muted / labels */
+  --fg-4:         var(--stone-400);   /* disabled */
+  --border:       var(--stone-200);
+  --border-strong:var(--stone-300);
+
+  /* -------- Type -------- */
+  --font-display: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --font-body:    "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Type scale (mobile-tuned) */
+  --fs-12:        12px;
+  --fs-13:        13px;
+  --fs-14:        14px;
+  --fs-15:        15px;
+  --fs-16:        16px;
+  --fs-18:        18px;
+  --fs-20:        20px;
+  --fs-24:        24px;
+  --fs-32:        32px;
+  --fs-44:        44px;   /* hero stat */
+  --fs-64:        64px;   /* admin big stat */
+
+  --lh-tight:     1.05;
+  --lh-snug:      1.2;
+  --lh-normal:    1.45;
+  --lh-loose:     1.6;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.08em;
+  --tracking-caps:    0.12em;
+
+  /* -------- Spacing (4px base) -------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-14: 56px;
+  --sp-18: 72px;
+
+  /* -------- Radii -------- */
+  --r-input:    12px;
+  --r-button:   10px;
+  --r-card:     14px;
+  --r-pill:     999px;
+
+  /* -------- Motion -------- */
+  --ease:       cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast:    80ms;
+  --dur-base:   180ms;
+  --dur-settle: 600ms;
+
+  /* -------- Layout -------- */
+  --app-max:        440px;
+  --gutter:         20px;
+  --nav-h:          64px;
+  --header-h:       56px;
+}
+
+/* -------- Dark theme -------- */
+:root[data-theme="dark"] {
+  --paper:        #161513;
+  --paper-dim:    #1E1C19;
+  --ink:          #F2EEE3;
+  --ink-soft:     #E2DDD0;
+  --stone-50:     #232220;
+  --stone-100:    #2A2925;
+  --stone-200:    #34322D;
+  --stone-300:    #4A4740;
+  --stone-400:    #6B665C;
+  --stone-500:    #8E8878;
+  --stone-600:    #B0AA9A;
+  --stone-700:    #C9C3B4;
+  --stone-800:    #E2DDD0;
+  --bg:           var(--paper);
+  --bg-elev:      #1F1D1A;
+  --bg-sunk:      #131210;
+  --fg:           var(--ink);
+  --fg-2:         var(--stone-700);
+  --fg-3:         var(--stone-500);
+  --fg-4:         var(--stone-400);
+  --border:       var(--stone-200);
+  --border-strong:var(--stone-300);
+  --terracotta-bg: #3C211A;
+  --moss-bg:       #1F2C22;
+}
+
+/* =========================================================
+   Semantic Type Classes
+   ========================================================= */
+
+.t-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-12);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+.t-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-13);
+  font-weight: 500;
+  color: var(--fg-2);
+}
+
+.t-body {
+  font-family: var(--font-body);
+  font-size: var(--fs-15);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  color: var(--fg);
+}
+
+.t-body-strong {
+  font-family: var(--font-body);
+  font-size: var(--fs-15);
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.t-meta {
+  font-family: var(--font-body);
+  font-size: var(--fs-13);
+  font-weight: 400;
+  color: var(--fg-3);
+}
+
+.t-h1 {
+  font-family: var(--font-body);
+  font-size: var(--fs-24);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+}
+
+.t-h2 {
+  font-family: var(--font-body);
+  font-size: var(--fs-20);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+}
+
+.t-h3 {
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.t-serif {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: var(--tracking-tight);
+}
+
+.t-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+.t-num-hero {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  font-weight: 500;
+  font-size: var(--fs-44);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--fg);
+}
+
+.t-num-mega {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  font-weight: 500;
+  font-size: var(--fs-64);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--fg);
+}
+
+/* =========================================================
+   Base reset (opt-in by setting on body)
+   ========================================================= */
+.ss-base {
+  font-family: var(--font-body);
+  font-size: var(--fs-15);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

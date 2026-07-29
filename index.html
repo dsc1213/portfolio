@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sree Charan Damodara — Senior Full Stack Engineer</title>
+<meta name="description" content="Senior full-stack engineer in Dallas working in React, Angular, Vue, TypeScript, and Node.js — micro-frontends, design systems, API design, and production reliability.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dsc1213.github.io/portfolio/">
+<meta property="og:title" content="Sree Charan Damodara — Senior Full Stack Engineer">
+<meta property="og:description" content="10+ years building product front ends and the services behind them — React, Angular, Vue, TypeScript, Node.js. Dallas, TX.">
+<meta property="og:image" content="https://dsc1213.github.io/portfolio/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sree Charan Damodara — Senior Full Stack Engineer">
+<meta name="twitter:description" content="10+ years building product front ends and the services behind them — React, Angular, Vue, TypeScript, Node.js.">
+<meta name="twitter:image" content="https://dsc1213.github.io/portfolio/assets/og-image.png">
+<link rel="canonical" href="https://dsc1213.github.io/portfolio/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/site.css?v=7">
+<script>
+  // Apply saved theme before first paint to avoid a flash
+  try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light'); } catch (e) {}
+</script>
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<script src="js/main.js?v=2" defer></script>
+</head>
+<body>
+
+<div class="ss-base" style="background: var(--bg); min-height: 100vh; overflow-x: hidden; position: relative;">
+  <div class="grain"></div>
+
+  <!-- ============ Nav ============ -->
+  <div style="position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--stone-200);">
+    <div class="wrap" style="height: 60px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="width: 30px; height: 30px; background: var(--chartreuse); color: var(--chartreuse-ink); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-weight: 600; font-size: 13px;">SC</div>
+        <div class="t-serif" style="font-size: 21px;">sree charan</div>
+      </div>
+      <div style="display: flex; gap: 14px; align-items: center; min-width: 0; flex: 1; justify-content: flex-end; position: relative;" class="t-label">
+        <nav class="nav-links" id="nav-links" style="display: flex; gap: 18px; align-items: center; overflow-x: auto; min-width: 0; scrollbar-width: none;">
+          <a href="#about" style="text-decoration: none; white-space: nowrap;">About</a>
+          <a href="#experience" style="text-decoration: none; white-space: nowrap;">Experience</a>
+          <a href="#projects" style="text-decoration: none; white-space: nowrap;">Projects</a>
+          <a href="#testimonials" style="text-decoration: none; white-space: nowrap;">Recommendations</a>
+          <a href="#contact" style="text-decoration: none; white-space: nowrap;">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle theme" class="cta-btn t-label" style="cursor: pointer; background: none; border: 1px solid var(--stone-300); border-radius: var(--r-button); padding: 6px 12px; white-space: nowrap; flex-shrink: 0;">Dark mode</button>
+        <button id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false" class="nav-toggle cta-btn t-label" style="cursor: pointer; background: none; border: 1px solid var(--stone-300); border-radius: var(--r-button); padding: 6px 12px; flex-shrink: 0; color: var(--fg);">Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Hero ============ -->
+  <div class="wrap hero-row" style="padding-top: 64px; padding-bottom: 64px; display: flex; gap: 48px; align-items: center;">
+    <div class="image-slot image-slot--rounded has-img" id="portrait" style="width: 220px; height: 220px; flex-shrink: 0;"><img src="assets/portrait.jpg" alt="Sree Charan Damodara"></div>
+    <div style="flex: 1; min-width: 280px; position: relative;">
+      <div class="t-num" style="font-size: 13px; color: var(--accent-text); margin-bottom: 12px; letter-spacing: var(--tracking-wide);">— SENIOR FULL STACK ENGINEER · 10+ YEARS · DALLAS, TX</div>
+      <h1 class="t-h1" style="font-size: 52px; line-height: 1; margin: 0 0 20px 0; letter-spacing: -0.03em;">Sree Charan<br><span class="t-serif" style="font-size: 54px;">Damodara</span></h1>
+      <p class="t-body hero-copy" style="font-size: 18px; max-width: 620px; margin: 0 auto 28px auto; color: var(--fg-2); line-height: 1.55;">
+        I'm a senior full-stack engineer in Dallas focused on <span class="t-serif" style="font-size: 19px;">React</span>, Angular, Vue, TypeScript, and <span class="t-serif" style="font-size: 19px;">Node.js</span>. Most of my work sits where the front end meets the services behind it — shared component libraries, cleaner APIs, and platform pieces that help teams ship faster.
+      </p>
+      <div class="hero-cta" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#projects" class="cta-btn t-label" style="text-decoration: none; background: var(--chartreuse); color: var(--chartreuse-ink); padding: 13px 24px; border-radius: var(--r-button); font-weight: 600;">View projects</a>
+        <a href="#contact" class="cta-btn t-label" style="text-decoration: none; border: 1px solid var(--stone-300); padding: 13px 24px; border-radius: var(--r-button); font-weight: 600;">Get in touch</a>
+        <div style="position: relative;">
+          <button id="resume-toggle" aria-controls="resume-menu" aria-expanded="false" class="cta-btn t-label" style="cursor: pointer; background: none; text-decoration: none; border: 1px solid var(--stone-300); padding: 13px 24px; border-radius: var(--r-button); font-weight: 600; color: var(--fg); display: inline-flex; align-items: center; gap: 9px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 3v12"></path><path d="m7 12 5 5 5-5"></path><path d="M5 21h14"></path></svg>Resume</button>
+          <div id="resume-menu" hidden style="position: absolute; top: calc(100% + 8px); left: 0; z-index: 30; background: var(--bg-elev); border: 1px solid var(--stone-200); border-radius: var(--r-card); overflow: hidden; min-width: 180px; display: flex; flex-direction: column; text-align: left;">
+            <a href="uploads/sree0526.pdf" download class="t-label" style="text-decoration: none; padding: 12px 16px; border-bottom: 1px solid var(--stone-200);">PDF</a>
+            <a href="uploads/Sree Charan Damodara.docx" download class="t-label" style="text-decoration: none; padding: 12px 16px;">Word (.docx)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Strengths ============ -->
+  <div class="section" id="about">
+    <div class="wrap">
+      <div class="t-eyebrow" style="margin-bottom: 10px;">HOW I WORK</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">The <span class="t-serif" style="font-size: 31px;">strengths</span> I lean on</h2>
+      <div class="grid-3">
+        <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--chartreuse); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
+          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <i data-lucide="layers" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+          </div>
+          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">01</div>
+          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">End-to-end ownership</div>
+          <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">I take a feature from the interface through the API and data layer, then stay with it in production. Knowing both sides means fewer handoffs and decisions that hold up once real traffic hits.</div>
+        </div>
+        <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--tech); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
+          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--tech); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <i data-lucide="git-branch" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+          </div>
+          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">02</div>
+          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Architecture and platform work</div>
+          <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">Shared component libraries, micro-frontends, SSR foundations, and API contracts that several teams build on — the pieces that stop each squad from re-solving the same problem.</div>
+        </div>
+        <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--ink); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
+          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--ink); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <i data-lucide="bug" style="width: 24px; height: 24px; color: var(--paper); stroke-width: 1.75;"></i>
+          </div>
+          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">03</div>
+          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Debugging and reliability</div>
+          <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">When something breaks, I work through logs and traces in Splunk, Datadog, and New Relic, reproduce the issue, and find the root cause rather than patching the symptom. Test coverage, monitoring, and on-call are part of the job.</div>
+        </div>
+        <div style="padding: 28px 20px; border-radius: var(--r-card); border-top: 3px solid var(--chartreuse); background: var(--bg-elev); border-left: 1px solid var(--stone-200); border-right: 1px solid var(--stone-200); border-bottom: 1px solid var(--stone-200);">
+          <div style="width: 52px; height: 52px; border-radius: 999px; background: var(--chartreuse); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <i data-lucide="users" style="width: 24px; height: 24px; color: var(--chartreuse-ink); stroke-width: 1.75;"></i>
+          </div>
+          <div class="t-num" style="font-size: 12px; color: var(--fg-3); margin-bottom: 8px;">04</div>
+          <div class="t-h3" style="font-size: 17px; margin-bottom: 10px;">Working with the team</div>
+          <div class="t-body" style="color: var(--fg-2); font-size: 14.5px;">Code review, design-system and standards decisions, mentoring newer engineers, and working directly with design and product so what ships is what was actually needed.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Skills ============ -->
+  <div class="section">
+    <div class="wrap">
+      <div class="t-eyebrow" style="margin-bottom: 10px;">TECHNICAL SKILLS</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">The <span class="t-serif" style="font-size: 31px;">toolkit</span></h2>
+      <div class="skills-grid" style="gap: 0 48px;">
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Front-end</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">React.js · Angular · Next.js · TypeScript · Redux Toolkit · Vue.js · Micro-frontends · Module Federation · SSR · Tailwind · SASS/LESS · D3.js · Ag-Grid</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Back-end &amp; APIs</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Node.js · Express.js · Fastify.js · Java · GraphQL · REST API design · Kafka · WebSockets · Microservices · Event-driven systems · Caching strategy</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Cloud</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">AWS (S3, Lambda, CloudFront, EC2, API Gateway) · Azure (App Service, Functions, DevOps) · Serverless · Vercel</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">DevOps &amp; infrastructure</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Docker · Kubernetes · Terraform · Jenkins · GitHub Actions · CI/CD · Vault · Nginx</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Databases</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">PostgreSQL · MongoDB · Redis · Cassandra · Elasticsearch · BigQuery · DynamoDB</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Testing &amp; quality</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Playwright · Cypress · Jest · React Testing Library · SonarQube · Lighthouse</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Observability &amp; reliability</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Datadog · Splunk · New Relic · Lighthouse · On-call incident response · Root cause analysis · Performance profiling</div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--stone-200);">
+          <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600;">Ways of working</div>
+          <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Agile · System design reviews · Mentoring · Accessibility · GitHub Copilot / AI-assisted development</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Experience ============ -->
+  <div class="section" id="experience">
+    <div class="wrap">
+      <div class="t-eyebrow" style="margin-bottom: 10px;">EMPLOYMENT HISTORY</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">Where I've <span class="t-serif" style="font-size: 31px;">worked</span></h2>
+      <div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">Fidelity · Westlake, TX</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">Full Stack Software Engineer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Feb 2025 – Present</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Build and maintain shared Angular and Vue components inside a micro-frontend platform used by several product teams, and take production on-call for the services we own.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~25%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Less duplicated UI work</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">On-call</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Production ownership</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">E2E</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Playwright suites</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">–</span><span data-toggle-label>Hide details</span></button>
+            <div class="job-detail">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Architecture</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Build reusable Angular and Vue components in a Micro-Frontend architecture, cutting a significant share of the repeated UI work across teams.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">APIs</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Work on the Java and GraphQL services behind these front-ends, shaping the schema and queries the UI depends on.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Platform</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Contribute to a React tooling initiative that standardises component patterns so teams stop rebuilding the same pieces.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Reliability</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Take part in on-call rotation: triage production issues with Splunk and Datadog, and write up root cause afterwards.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Quality</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Work with UX on accessible, Figma-accurate interfaces, covered by unit tests and Playwright end-to-end suites.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Ways of working</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Use GitHub Copilot day to day where it genuinely speeds up routine work.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Angular</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Vue.js</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">TypeScript</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Java</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">GraphQL</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Playwright</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Datadog</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Splunk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">Bank of America · Plano, TX</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">Senior Front-End Engineer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Aug 2024 – Feb 2025</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Led front-end work on high-traffic internal banking applications and set the patterns the rest of the team built against.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~20%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Faster builds</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">React 18</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Platform upgrade</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">Reviews</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Front-end standards</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Delivery</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Led feature development on internal applications with heavy daily usage, focusing on maintainability and component reuse.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Tooling</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Moved tooling to Vite and restructured the Webpack config, reducing build times by ~20%.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Standards</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Set front-end conventions through code review so the codebase stayed consistent as the team grew.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Architecture</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built shared components, including custom CKEditor and Kendo UI integrations, used across several screens.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React 18</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Next.js</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redux Toolkit</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Vite</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">SCSS</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Kendo UI</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Webpack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">Walmart · Dallas, TX</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">Software Engineer III</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Jan 2022 – Aug 2024</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Owned the front end of an energy management platform end to end, plus the Node.js layer feeding it real-time data from IoT devices across stores.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">End-to-end</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Application ownership</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">80%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Test coverage</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~40%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Fewer regressions</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Ownership</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Led the front end end to end — component architecture, state design, test strategy, and production support after release.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">UX &amp; design</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Acted as UX for the team when no designer was assigned: designed screens and user flows, presented them to product owners for approval, and implemented the accepted designs.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Migration</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Led the Node.js 14 → 18 migration, resolving dependency conflicts and delivering the upgrade with zero production downtime.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Backend</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built and maintained a Node.js Backend-for-Frontend layer that consolidated several upstream services into a single API for the UI.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Real-time</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Implemented Kafka and WebSocket streaming for live device readings and status updates across store locations.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Automation</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built the Cypress end-to-end automation suite and raised Jest coverage to 80%, reducing regressions and meeting SonarQube quality gates before release.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Performance</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Improved Core Web Vitals through Lighthouse-driven optimisation, bundle tuning, and a responsive layout rework.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Operations</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Managed day-to-day Kubernetes operations — pods, deployments, and log triage — with secrets handled in Vault and Akeyless.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redux</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Node.js (BFF)</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">IoT data</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Kafka</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">WebSockets</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Kubernetes</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Docker</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Cypress</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">7-Eleven · Irving, TX</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">Software Engineer II · React Developer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Feb 2020 – Jan 2022</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Built the SSR foundation and API layer that several product squads shipped on top of.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~45%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Faster page loads</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">SSR</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Shared boilerplate</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">Redis</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Caching layer</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Architecture</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Created a reusable server-side rendering setup that other projects adopted, so teams stopped re-solving the same architecture.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Design system</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built a shared component library that several applications consumed, cutting duplicated UI work and keeping patterns consistent across teams.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Performance</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Cut page load times ~45% through bundle splitting, lazy loading, and a browser caching strategy.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">APIs</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Designed REST and GraphQL APIs on Node.js, Express, and AWS Lambda; strengthened JWT-based access controls and reduced authorization-related incidents.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Data</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Added Redis caching and MongoDB query tuning, reducing data retrieval time by ~20%.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Tooling</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Led the move to Webpack 5 with Module Federation, improving build speed and enabling shared modules across apps.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Next.js</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">TypeScript</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Node.js</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">AWS Lambda</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">GraphQL</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">MongoDB</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redis</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">New Relic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">HPE Aruba · Santa Clara, CA</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">UI Engineer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Feb 2018 – Feb 2020</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Built the component system and data-visualisation layer for network management dashboards.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">80%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Test coverage</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~50%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Faster data reads</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~25%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Faster builds</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Design system</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Designed reusable React components and D3.js visualizations that unified data presentation across products.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Data</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Added a Redis caching layer and Elasticsearch-backed search, halving data retrieval time on the dashboards.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Testing</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Reached 80% coverage with Jest and React Testing Library, cutting the defects that reached QA.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">APIs</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built APIs on Fastify and Express against PostgreSQL, Cassandra, and Elasticsearch.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">D3.js</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">MobX</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Fastify</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Express</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">PostgreSQL</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Cassandra</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Elasticsearch</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">State Street Bank and Trust · Quincy, MA</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">UI Engineer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Nov 2015 – Feb 2018</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Full-lifecycle front-end work on a regulated financial reporting application.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">Full SDLC</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Delivery ownership</div>
+              </div>
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~35%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Fewer reported errors</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Delivery</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Worked across the full lifecycle — build, test, debug, release — on a reporting application used by internal teams.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Reliability</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Introduced Error Boundary handling, which meaningfully reduced user-reported UI errors.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Integration</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Integrated REST APIs with Redux state management for predictable data flow across screens.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redux</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">SQL</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React Router</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Axios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">Vamana Systems · IL</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">System Analyst</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Jul 2015 – Oct 2015</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">Front-end delivery on client web applications, from mockups through QA.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">~20%</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Faster page loads</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Front-end</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Built user-facing pages in React, Redux, and vanilla JavaScript from PSD mockups.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Performance</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Improved page load times by ~20% and resolved cross-browser compatibility issues.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">React</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Redux</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">JavaScript</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">CSS</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">Axios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-row" style="border-top: 1px solid var(--stone-200); padding: 32px 12px;">
+          <div>
+            <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.14em; font-size: 11px; color: var(--accent-text); font-weight: 600; margin-bottom: 8px;">Saavy Computer Solutions · IL</div>
+            <div class="t-h3" style="font-size: 19px; margin-bottom: 8px;">UI Developer</div>
+            <div class="t-num" style="font-size: 12px; color: var(--fg-3);">Jan 2015 – Jun 2015</div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+            <div class="t-body" style="font-size: 17px; color: var(--fg); line-height: 1.45;">First professional role — form-heavy web applications on an MVC, 3-tier architecture.</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+              <div>
+                <div class="t-num" style="font-size: 26px; font-weight: 500; color: var(--chartreuse-dim); line-height: 1;">RBAC</div>
+                <div class="t-label" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; color: var(--fg-3); margin-top: 6px;">Role-based UI access</div>
+              </div>
+            </div>
+            <button class="job-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+            <div class="job-detail collapsed">
+              <div style="display: grid; grid-template-columns: 1fr; gap: 0;">
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Access control</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Implemented role-based permissions in the UI layer and built custom modules for existing applications.</div>
+                </div>
+                <div class="exp-bullet" style="padding: 13px 0; border-top: 1px solid var(--stone-200);">
+                  <div class="t-num" style="text-transform: uppercase; letter-spacing: 0.11em; font-size: 9.5px; color: var(--accent-text); padding-top: 4px; white-space: nowrap;">Front-end</div>
+                  <div class="t-body" style="font-size: 14.5px; color: var(--fg-2); line-height: 1.5;">Translated mockups into responsive pages and supported them through release.</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">JavaScript</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">HTML</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">CSS</span>
+                <span class="pill" style="font-size: 11px; padding: 3px 9px;">MVC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Projects ============ -->
+  <div class="section" id="projects">
+    <div class="wrap">
+      <div class="t-eyebrow" style="margin-bottom: 10px;">PERSONAL PROJECTS</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">Things I've <span class="t-serif" style="font-size: 31px;">built</span></h2>
+
+      <div class="proj-card" style="border: 1px solid var(--stone-200); border-radius: var(--r-card); overflow: hidden; margin-bottom: 24px;">
+        <div class="proj-media" data-carousel="rummy">
+          <div class="image-slot has-img active" data-slide id="proj-rummy-1"><img src="assets/screenshots/rummy-3.png" alt="Simple Rummy — lobby with open and completed tables"></div>
+          <div class="image-slot has-img" data-slide id="proj-rummy-2"><img src="assets/screenshots/rummy-modern-melds.png" alt="Simple Rummy — modern layout with cards auto-grouped into melds"></div>
+          <div class="image-slot has-img" data-slide id="proj-rummy-3"><img src="assets/screenshots/rummy-2.png" alt="Simple Rummy — create table dialog with game options"></div>
+          <div class="image-slot has-img image-slot--mobile" data-slide id="proj-rummy-4"><img src="assets/screenshots/rummy-mobile-1.png" alt="Simple Rummy — mobile lobby"></div>
+          <div class="image-slot has-img image-slot--mobile" data-slide id="proj-rummy-5"><img src="assets/screenshots/rummy-mobile-2.png" alt="Simple Rummy — mobile gameplay on your turn"></div>
+          <div style="position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 10px; pointer-events: none;">
+            <button data-prev aria-label="Previous" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">‹</button>
+            <button data-next aria-label="Next" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">›</button>
+          </div>
+        </div>
+        <div style="padding: 36px; display: flex; flex-direction: column; gap: 14px; justify-content: center;">
+          <div class="t-eyebrow">CARD GAME PWA</div>
+          <div class="t-h3" style="font-size: 22px;">Simple Rummy</div>
+          
+          <div class="proj-detail collapsed">
+            <div class="t-body" style="font-size: 15px; color: var(--fg-2);">A multiplayer Indian Rummy engine and client I designed, built, and shipped solo. The server owns all game state — deal, turn order, joker handling, hand validation, and scoring — so the client can never authorise its own move.</div>
+          <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Authoritative Socket.IO server driving turn state across up to 7 seats per table</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Redis-backed session store so tables and players survive restarts and reconnects</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Configurable rule set per table — drop penalties, joker mode, deck count, turn and rejoin timers</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Installable PWA plus native iOS and Android builds from the same client via Capacitor</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">100+ active users since launch</li>
+          </ul>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Node.js</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Express</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Socket.IO</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Redis</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">PWA</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Capacitor</span>
+          </div>
+          </div>
+          <a href="https://simplerummyapp.com" target="_blank" rel="noopener" class="proj-link">Visit Simple Rummy →</a>
+          <button class="proj-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+        </div>
+      </div>
+
+      <div class="proj-card rev" style="border: 1px solid var(--stone-200); border-radius: var(--r-card); overflow: hidden; margin-bottom: 24px;">
+        <div class="proj-media" data-carousel="myxi">
+          <div class="image-slot has-img active" data-slide id="proj-myxi-1"><img src="assets/screenshots/myxi-1.png" alt="MyXI — landing page with live match snapshot"></div>
+          <div class="image-slot has-img" data-slide id="proj-myxi-2"><img src="assets/screenshots/myxi-2.png" alt="MyXI — dashboard with fantasy contests across tournaments"></div>
+          <div class="image-slot has-img" data-slide id="proj-myxi-3"><img src="assets/screenshots/myxi-3.png" alt="MyXI — contest detail with matches and participant scores"></div>
+          <div class="image-slot has-img image-slot--mobile" data-slide id="proj-myxi-4"><img src="assets/screenshots/myxi-mobile-1.png" alt="MyXI — mobile landing page"></div>
+          <div class="image-slot has-img image-slot--mobile" data-slide id="proj-myxi-5"><img src="assets/screenshots/myxi-mobile-2.png" alt="MyXI — mobile contests dashboard"></div>
+          <div style="position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 10px; pointer-events: none;">
+            <button data-prev aria-label="Previous" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">‹</button>
+            <button data-next aria-label="Next" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">›</button>
+          </div>
+        </div>
+        <div style="padding: 36px; display: flex; flex-direction: column; gap: 14px; justify-content: center;">
+          <div class="t-eyebrow">FANTASY CRICKET · IN PROGRESS</div>
+          <div class="t-h3" style="font-size: 22px;">MyXI</div>
+          
+          <div class="proj-detail collapsed">
+            <div class="t-body" style="font-size: 15px; color: var(--fg-2);">A fantasy cricket platform built end to end — React front end, Express API, PostgreSQL schema, and JWT authentication. The core of the system is a four-tier permission model that scopes every action to the caller's role.</div>
+          <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Role hierarchy — master admin, admin, contest manager, and player — with server-enforced access control</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Tournament and contest management: team selection, points rules, and match-by-match scoring</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Live score ingestion with throttled sync, manual override workflow, and audit logging</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Per-contest leaderboards and player statistics computed from match data</li>
+          </ul>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">React</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Vite</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Node.js</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Express</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">PostgreSQL</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">JWT</span>
+          </div>
+          </div>
+          <a href="https://my-xi-cricket-fantasy.vercel.app/" target="_blank" rel="noopener" class="proj-link">Visit MyXI →</a>
+          <button class="proj-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+        </div>
+      </div>
+
+      <div class="proj-card" style="border: 1px solid var(--stone-200); border-radius: var(--r-card); overflow: hidden;">
+        <div class="proj-media" data-carousel="split">
+          <div class="image-slot has-img active" data-slide id="proj-split-1"><img src="assets/screenshots/simplesplit-1.png" alt="SimpleSplit — dashboard with balance, groups and recent bills"></div>
+          <div class="image-slot has-img" data-slide id="proj-split-2"><img src="assets/screenshots/simplesplit-2.png" alt="SimpleSplit — group bills with per-member settle actions"></div>
+          <div class="image-slot has-img" data-slide id="proj-split-3"><img src="assets/screenshots/simplesplit-3.png" alt="SimpleSplit — net balance view across groups with platform fees"></div>
+          <div class="image-slot has-img image-slot--mobile" data-slide id="proj-split-4"><img src="assets/screenshots/simplesplit-mobile-1.png" alt="SimpleSplit — mobile login screen"></div>
+          <div style="position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 10px; pointer-events: none;">
+            <button data-prev aria-label="Previous" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">‹</button>
+            <button data-next aria-label="Next" style="pointer-events: auto; width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer;">›</button>
+          </div>
+        </div>
+        <div style="padding: 36px; display: flex; flex-direction: column; gap: 14px; justify-content: center;">
+          <div class="t-eyebrow">BILL SPLITTING APP</div>
+          <div class="t-h3" style="font-size: 22px;">SimpleSplit</div>
+          
+          <div class="proj-detail collapsed">
+            <div class="t-body" style="font-size: 15px; color: var(--fg-2);">An expense-splitting application built on a single Expo codebase that ships to iOS, Android, and web from one source tree. Backed by Supabase with row-level security enforcing a three-tier permission model.</div>
+          <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Role hierarchy — app admin, group admin, member — enforced at the database layer</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Split engine supporting equal, percentage, and custom allocations with fee handling</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Private bills that expose only the caller's own split to non-payers</li>
+            <li class="t-body" style="font-size: 14px; color: var(--fg-2);">Net-balance settlement across groups, covered by a Playwright end-to-end suite</li>
+          </ul>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">React Native</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Expo</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">TypeScript</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Supabase</span>
+            <span class="pill" style="font-size: 12px; padding: 4px 10px;">Zustand</span>
+          </div>
+          </div>
+          <a href="https://simple-split-roan.vercel.app/" target="_blank" rel="noopener" class="proj-link">Visit SimpleSplit →</a>
+          <button class="proj-toggle t-label"><span class="t-num" data-toggle-icon style="font-size: 14px; line-height: 1; width: 10px; text-align: center;">+</span><span data-toggle-label>View details</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Education + Hobbies ============ -->
+  <div class="section">
+    <div class="wrap" style="display: grid; grid-template-columns: 1fr; gap: 32px;">
+      <div style="display: grid; grid-template-columns: 1fr; gap: 32px;" class="skills-grid">
+        <div>
+          <div class="t-eyebrow" style="margin-bottom: 10px;">EDUCATION</div>
+          <h2 class="t-h2" style="font-size: 24px; margin: 0 0 18px 0;">Background</h2>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="border: 1px solid var(--stone-200); border-left: 3px solid var(--chartreuse); border-radius: var(--r-card); padding: 18px 20px; background: var(--bg-elev); display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start;">
+              <div class="t-num" style="font-size: 9.5px; font-weight: 600; color: var(--accent-text); letter-spacing: 0.12em; text-transform: uppercase; padding-top: 5px;">Master's</div>
+              <div>
+                <div class="t-h3" style="font-size: 15px;">Applied Computer Science</div>
+                <div class="t-meta" style="margin-top: 5px;">Northwest Missouri State University</div>
+                <div class="t-meta" style="margin-top: 2px; opacity: 0.72;">Maryville, MO · USA</div>
+                <div class="t-num" style="font-size: 11.5px; color: var(--fg-3); margin-top: 8px;">2013 – 2014</div>
+              </div>
+            </div>
+            <div style="border: 1px solid var(--stone-200); border-left: 3px solid var(--tech); border-radius: var(--r-card); padding: 18px 20px; background: var(--bg-elev); display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start;">
+              <div class="t-num" style="font-size: 9.5px; font-weight: 600; color: var(--tech); letter-spacing: 0.12em; text-transform: uppercase; padding-top: 5px;">Bachelor's</div>
+              <div>
+                <div class="t-h3" style="font-size: 15px;">Information Technology</div>
+                <div class="t-meta" style="margin-top: 5px;">Jawaharlal Nehru Technological University</div>
+                <div class="t-meta" style="margin-top: 2px; opacity: 0.72;">Kakinada · India</div>
+                <div class="t-num" style="font-size: 11.5px; color: var(--fg-3); margin-top: 8px;">2008 – 2012</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="t-eyebrow" style="margin-bottom: 10px;">OUTSIDE OF WORK</div>
+          <h2 class="t-h2" style="font-size: 24px; margin: 0 0 18px 0;">Hobbies</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span class="pill">Indoor games</span>
+            <span class="pill">Building fun side projects</span>
+            <span class="pill">Cooking</span>
+            <span class="pill">Exploring new tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Testimonials ============ -->
+  <div class="section" id="testimonials">
+    <div class="wrap">
+      <div class="t-eyebrow" style="margin-bottom: 10px;">LINKEDIN RECOMMENDATIONS</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 40px 0;">What <span class="t-serif" style="font-size: 31px;">colleagues</span> say</h2>
+      <div data-carousel="testimonials" style="max-width: 640px; margin: 0 auto; position: relative;">
+        <div style="border: 1px solid var(--stone-200); border-radius: var(--r-card); overflow: hidden; background: var(--bg-elev);">
+          <div class="testimonial-card active" data-slide id="testimonial-1">
+            <div class="testimonial-quote">Sree is one of the smartest developers that I have ever worked with. He could come up with a solution that not only works but also is easy to apply. His knowledge on Node.js and React.js is huge and has a big impact on the projects that we're working on together.</div>
+            <div class="testimonial-attrib">
+              <div class="t-h3" style="font-size: 15px;">Tom Tran</div>
+              <div class="t-meta" style="margin-top: 3px;">Lead Software Engineer — UI</div>
+              <div class="t-num" style="font-size: 11px; color: var(--fg-3); margin-top: 6px;">Worked on the same team · August 2021</div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-slide id="testimonial-2">
+            <div class="testimonial-quote">I had the opportunity to work with Sree for almost 2 years on many projects and he was one of the key engineers in my team. Sree learns fast, understands the requirement and always finishes his tasks on time with clean code. He quickly became a senior member of our team and started guiding other junior engineers. I totally recommend him to any project — Sree has a great set of soft and technical skills that will definitely leave a mark on any project.</div>
+            <div class="testimonial-attrib">
+              <div class="t-h3" style="font-size: 15px;">Manuel Maguiña</div>
+              <div class="t-meta" style="margin-top: 3px;">Sr Principal Engineer · Engineering Manager</div>
+              <div class="t-num" style="font-size: 11px; color: var(--fg-3); margin-top: 6px;">Managed Sree Charan directly · January 2020</div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-slide id="testimonial-3">
+            <div class="testimonial-quote">I have been working with Sree Charan for the past 2 years. Sree has been a valuable asset to our team as a UI developer. He consistently impresses the team with his ability to meet deadlines and deliver high quality work. What sets him apart is his remarkable aptitude for design thinking. He actively engages with the business and leadership teams to refine and enhance the overall design. His ability to bridge the gap between technical and non-technical teams is remarkable. Sree is not only an exceptional UI developer but also an excellent team player.</div>
+            <div class="testimonial-attrib">
+              <div class="t-h3" style="font-size: 15px;">Sruthi Vasudevan</div>
+              <div class="t-meta" style="margin-top: 3px;">Senior Software Engineer · Cloud &amp; Backend Specialist</div>
+              <div class="t-num" style="font-size: 11px; color: var(--fg-3); margin-top: 6px;">Worked on the same team · October 2023</div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-slide id="testimonial-4">
+            <div class="testimonial-quote">Sree was my colleague at State Street. He is not only a dedicated team player but also a smart and hard worker. He is very flexible to learn new things, helping fellow teammates as well as handling different responsibilities very efficiently.</div>
+            <div class="testimonial-attrib">
+              <div class="t-h3" style="font-size: 15px;">Nirav Desai</div>
+              <div class="t-meta" style="margin-top: 3px;">Senior UI Engineer · 18+ years in React &amp; Node</div>
+              <div class="t-num" style="font-size: 11px; color: var(--fg-3); margin-top: 6px;">Worked on the same team · January 2020</div>
+            </div>
+          </div>
+        </div>
+        <button data-prev aria-label="Previous" class="cta-btn" style="position: absolute; left: -18px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px;">‹</button>
+        <button data-next aria-label="Next" class="cta-btn" style="position: absolute; right: -18px; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--bg-elev); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px;">›</button>
+        <div data-dots="testimonials" style="display: flex; justify-content: center; gap: 8px; margin-top: 16px;">
+          <button aria-label="Show recommendation 1" style="width: 8px; height: 8px; border-radius: 999px; border: none; cursor: pointer; padding: 0; background: var(--chartreuse);"></button>
+          <button aria-label="Show recommendation 2" style="width: 8px; height: 8px; border-radius: 999px; border: none; cursor: pointer; padding: 0; background: var(--stone-300);"></button>
+          <button aria-label="Show recommendation 3" style="width: 8px; height: 8px; border-radius: 999px; border: none; cursor: pointer; padding: 0; background: var(--stone-300);"></button>
+          <button aria-label="Show recommendation 4" style="width: 8px; height: 8px; border-radius: 999px; border: none; cursor: pointer; padding: 0; background: var(--stone-300);"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Contact ============ -->
+  <div class="section" id="contact" style="border-top: 1px solid var(--stone-200);">
+    <div class="wrap" style="text-align: center;">
+      <div class="t-eyebrow" style="margin-bottom: 8px;">GET IN TOUCH</div>
+      <h2 class="t-h2" style="font-size: 30px; margin: 0 0 24px 0;">Let's <span class="t-serif" style="font-size: 31px;">talk</span></h2>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;" class="t-label">
+        <a href="mailto:sreecharan.damodara@gmail.com" style="text-decoration: none;">sreecharan.damodara@gmail.com</a>
+        <span style="color: var(--stone-300);">·</span>
+        <a href="tel:6605412885" style="text-decoration: none;">660-541-2885</a>
+        <span style="color: var(--stone-300);">·</span>
+        <a href="https://www.linkedin.com/in/sree-charan-d-182389152" target="_blank" rel="noopener" style="text-decoration: none;">LinkedIn</a>
+        <span style="color: var(--stone-400);">·</span>
+        <a href="https://github.com/dsc1213" target="_blank" rel="noopener" style="text-decoration: none;">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 24px; text-align: center;">
+    <div class="t-meta">© 2026 Sree Charan Damodara</div>
+  </div>
+
+</div>
+
+</body>
+</html>
