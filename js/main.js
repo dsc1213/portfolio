@@ -88,11 +88,32 @@
         d.style.background = i === idx ? 'var(--chartreuse)' : 'var(--stone-300)';
       });
     };
+    const step = (delta) => { idx = (idx + delta + slides.length) % slides.length; render(); };
+
     carousel.querySelectorAll('[data-prev]').forEach((b) =>
-      b.addEventListener('click', () => { idx = (idx + slides.length - 1) % slides.length; render(); }));
+      b.addEventListener('click', () => step(-1)));
     carousel.querySelectorAll('[data-next]').forEach((b) =>
-      b.addEventListener('click', () => { idx = (idx + 1) % slides.length; render(); }));
+      b.addEventListener('click', () => step(1)));
     dots.forEach((d, i) => d.addEventListener('click', () => { idx = i; render(); }));
+
+    /* Touch swipe. Only acts when the gesture is clearly horizontal, so
+       vertical page scrolling over a carousel is never hijacked. */
+    let startX = 0, startY = 0, tracking = false;
+    carousel.addEventListener('touchstart', (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) < 45 || Math.abs(dx) <= Math.abs(dy)) return;
+      step(dx < 0 ? 1 : -1);
+    }, { passive: true });
+
     render();
   });
 
