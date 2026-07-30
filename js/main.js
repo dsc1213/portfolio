@@ -12,9 +12,14 @@
       try { localStorage.setItem(key, value); } catch (e) {}
     },
   };
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
   const applyTheme = (theme) => {
     root.setAttribute('data-theme', theme);
     themeBtn.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    // Keep the mobile browser chrome matching the page instead of staying white.
+    if (themeMeta) {
+      themeMeta.setAttribute('content', getComputedStyle(root).getPropertyValue('--paper').trim());
+    }
   };
   applyTheme(storage.get('theme') || 'light');
   themeBtn.addEventListener('click', () => {

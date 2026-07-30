@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FBFAF7">
 <title>Sree Charan Damodara — Senior Full Stack Engineer</title>
 <meta name="description" content="Senior full-stack engineer in Dallas working in React, Angular, Vue, TypeScript, and Node.js — micro-frontends, design systems, API design, and production reliability.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -22,13 +23,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/site.css?v=7">
+<link rel="stylesheet" href="css/site.css?v=8">
 <script>
   // Apply saved theme before first paint to avoid a flash
-  try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light'); } catch (e) {}
+  try {
+    var t = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    // Match --paper for the chosen theme so the mobile chrome doesn't flash light.
+    document.querySelector('meta[name="theme-color"]')
+      .setAttribute('content', t === 'dark' ? '#141715' : '#FBFAF7');
+  } catch (e) {}
 </script>
 <script src="https://unpkg.com/lucide@latest" defer></script>
-<script src="js/main.js?v=3" defer></script>
+<script src="js/main.js?v=4" defer></script>
 </head>
 <body>
 

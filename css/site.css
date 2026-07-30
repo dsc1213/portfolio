@@ -3,6 +3,11 @@
    ========================================================= */
 
 html { scroll-behavior: smooth; }
+/* The canvas takes its colour from <html>. Without this it stays transparent
+   and falls back to white — visible on iOS Safari, where the visual viewport
+   extends past the layout viewport as the toolbars auto-hide, and on any
+   rubber-band overscroll. */
+html, body { background: var(--bg); }
 body { margin: 0; }
 a { color: var(--ink); transition: color 180ms var(--ease); }
 a:hover { color: var(--chartreuse-dim); }
