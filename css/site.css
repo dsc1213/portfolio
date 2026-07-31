@@ -8,6 +8,9 @@ html { scroll-behavior: smooth; }
    extends past the layout viewport as the toolbars auto-hide, and on any
    rubber-band overscroll. */
 html, body { background: var(--bg); }
+/* Stop iOS rubber-band overscroll, which drags the whole document (sticky nav
+   included) past the end and exposes empty canvas above and below the page. */
+html { overscroll-behavior-y: none; }
 body { margin: 0; }
 a { color: var(--ink); transition: color 180ms var(--ease); }
 a:hover { color: var(--chartreuse-dim); }
